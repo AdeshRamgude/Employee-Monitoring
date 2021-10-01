@@ -20,7 +20,7 @@ Config = {
 }
 
 
-  #https://www.c-sharpcorner.com/article/firebase-crud-operations-using-python/
+#https://www.c-sharpcorner.com/article/firebase-crud-operations-using-python/
 
 firebase=pyrebase.initialize_app(Config)
 storage=firebase.storage()
@@ -29,7 +29,7 @@ database=firebase.database()
 auth = firebase.auth()
 email=input("Email:")
 password=input("Password:")
-# Log the user in
+# Log the User in
 user = auth.sign_in_with_email_and_password(email, password)
 
 # Get the user's idToken 
